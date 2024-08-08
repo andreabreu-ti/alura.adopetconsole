@@ -2,7 +2,7 @@ package br.com.alura.domain;
 
 public class Pet {
 
-	public Pet(String tipo, String nome, String raca, String idade, String cor, String peso) {
+	public Pet(String tipo, String nome, String raca, int idade, String cor, Float peso) {
 		this.tipo = tipo;
 		this.nome = nome;
 		this.raca = raca;
@@ -14,8 +14,8 @@ public class Pet {
 	private String tipo;
 	private String nome;
 	private String raca;
-	private String idade;
+	private int idade;
 	private String cor;
-	private String peso;
+	private Float peso;
 
 }
