@@ -24,7 +24,7 @@ public class AbrigoServiceTest {
 	@Test
 	public void deveVerificarSeDispararRequisicaoGetSeraChamado() throws IOException, InterruptedException {
 		
-		//abrigo.setId(0L);
+		abrigo.setId(0L);
 		String expectedAbrigosCadastrados = "Abrigos cadastrados:";
 		String expectedIdENome = "0 - Teste";
 
