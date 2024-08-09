@@ -28,7 +28,6 @@ public class AbrigoService {
 
 		String responseBody = response.body();
 		
-//		JsonArray jsonArray = JsonParser.parseString(responseBody).getAsJsonArray();
 		Abrigo[] abrigos =  new ObjectMapper().readValue(responseBody, Abrigo[].class);
 		
 		
