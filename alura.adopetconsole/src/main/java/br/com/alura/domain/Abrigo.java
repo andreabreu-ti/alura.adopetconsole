@@ -45,9 +45,9 @@ public class Abrigo {
 
 	@Override
 	public String toString() {
-		return "Abrigo [id=" + id + ", nome=" + nome + ", telefone=" + telefone + ", email=" + email + "]";
+		return """
+				"id":%s,"nome":"%s","telefone":"%s","email":"%s"
+				""".formatted(this.id, this.nome, this.telefone, this.email);
 	}
-	
-	
 
 }
