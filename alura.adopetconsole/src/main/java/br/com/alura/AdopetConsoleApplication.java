@@ -8,6 +8,8 @@ import br.com.alura.service.PetService;
 
 public class AdopetConsoleApplication {
 
+	//Ativar a API --> No terminal = java -jar api.jar
+	
 	public static void main(String[] args) {
 
 		ClientHttpConfiguration client = new ClientHttpConfiguration();
