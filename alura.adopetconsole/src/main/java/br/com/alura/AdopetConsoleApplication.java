@@ -11,14 +11,15 @@ public class AdopetConsoleApplication {
 	//Ativar a API --> No terminal = java -jar api.jar
 	
 	public static void main(String[] args) {
+		
+		CommandExecute executor = new CommandExecute();
 
 		ClientHttpConfiguration client = new ClientHttpConfiguration();
-
-		AbrigoService abrigoService = new AbrigoService(client);
 
 		PetService petService = new PetService(client);
 
 		System.out.println("##### BOAS VINDAS AO SISTEMA ADOPET CONSOLE #####");
+		
 		try {
 
 			int opcaoEscolhida = 0;
@@ -35,11 +36,11 @@ public class AdopetConsoleApplication {
 
 				if (opcaoEscolhida == 1) {
 
-					abrigoService.listarAbrigo();
+					executor.executeCommand(new ListaAbrigoCommand());
 
 				} else if (opcaoEscolhida == 2) {
 
-					abrigoService.cadastrarAbrigo();
+					executor.executeCommand(new CadastrarAbrigoCommand());
 
 				} else if (opcaoEscolhida == 3) {
 
